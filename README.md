@@ -66,3 +66,30 @@ Feature importance analysis identified the most influential financial predictors
 ---
 
 ## Repository Structure
+loan-payback-ml/
+│
+├── notebooks/
+│ └── loan-payback-model.ipynb
+│
+├── docs/
+│ └── loan-payback-report.docx
+│
+└── README.md
+
+
+---
+
+## Future Improvements
+
+- Hyperparameter tuning
+- Cross-validation
+- Deployment as a risk scoring API
+- Model comparison with additional ensemble techniques
+
+---
+
+## Author
+
+Preciosa Muujiza Ngoy Kalumba  
+M.S. Artificial Intelligence & Business Analytics  
+University of South Florida
