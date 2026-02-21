@@ -1,13 +1,13 @@
-## Model Performance
+# Assets
 
-### ROC Curve (XGBoost)
-![ROC Curve](assets/roc-curve.png)
+This folder contains visual outputs from the Loan Payback Machine Learning project.
 
-The tuned XGBoost model achieved an AUC score of approximately 0.92, demonstrating strong classification capability in distinguishing between loan repayment outcomes.
+## Included Visualizations
 
----
+- `roc-curve.png`  
+  Receiver Operating Characteristic (ROC) curve for the tuned XGBoost model demonstrating classification performance.
 
-### Model Comparison (AUC Scores)
-![Model Comparison](assets/model-comparison.png)
+- `model-comparison.png`  
+  Comparative AUC scores across baseline and hybrid models, highlighting the performance improvement from ensemble techniques.
 
-Multiple baseline and hybrid models were evaluated. Hybrid stacking approaches achieved the highest performance, outperforming individual models.
+These visuals are embedded in the main project README for presentation purposes.
