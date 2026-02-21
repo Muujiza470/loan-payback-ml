@@ -1,95 +1,85 @@
-# Predicting Loan Payback Using Machine Learning
+# Loan Payback Prediction Using Machine Learning
 
 ## Overview
 
-This project builds and evaluates supervised machine learning models to predict whether a borrower will repay a loan.
+This project develops and evaluates supervised machine learning models to predict whether a borrower will repay a loan.
 
-The objective was to identify key financial indicators that influence loan repayment risk and develop predictive models to support data-driven lending decisions.
+The objective is to support credit risk assessment by identifying high-risk borrowers using classification techniques and model benchmarking.
 
 ---
 
 ## Business Problem
 
-Financial institutions must assess borrower risk before approving loans. Incorrect risk assessment can lead to financial losses.
+Financial institutions must evaluate borrower risk before approving loans. Poor risk assessment can result in financial loss due to defaults.
 
-This project applies machine learning classification techniques to:
+This project applies machine learning models to:
 
 - Predict loan repayment likelihood
-- Identify high-risk borrowers
-- Support decision-making in credit risk analysis
+- Compare multiple classification algorithms
+- Evaluate performance using ROC-AUC
+- Improve predictive accuracy through model tuning and hybrid approaches
 
 ---
 
 ## Dataset
 
-- Kaggle financial dataset
-- Contains borrower demographic and financial features
-- Target variable: Loan repayment status
+- Financial lending dataset (Kaggle-style structured data)
+- Includes borrower financial and demographic features
+- Target variable: Loan repayment status (binary classification)
 
 ---
 
-## Tools Used
+## Tools & Technologies
 
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
+- XGBoost
+- LightGBM
 - Matplotlib / Seaborn
 
 ---
 
 ## Modeling Approach
 
-1. Data Cleaning & Preprocessing
-   - Handled missing values
-   - Feature engineering
-   - Encoding categorical variables
+### 1. Data Preparation
+- Data cleaning
+- Feature encoding
+- Handling class imbalance
+- Train/test split
 
-2. Model Development
-   - Logistic Regression
-   - Random Forest
-   - XGBoost (if used)
+### 2. Model Development
+- Logistic Regression
+- Random Forest
+- XGBoost
+- LightGBM
+- Neural Network
+- Hybrid / Stacked Models
 
-3. Model Evaluation
-   - Accuracy
-   - Precision / Recall
-   - Confusion Matrix
-   - AUC-ROC
+### 3. Model Evaluation
+- ROC Curve
+- AUC Score
+- Model comparison benchmarking
 
 ---
 
-## Key Results
+## Model Performance
 
-The models were evaluated based on classification performance.  
-Feature importance analysis identified the most influential financial predictors of repayment risk.
+### ROC Curve (XGBoost)
+
+![ROC Curve](assets/roc-curve.png)
+
+The tuned XGBoost model achieved an AUC of approximately **0.92**, indicating strong classification performance in distinguishing between repayment outcomes.
+
+---
+
+### Model Comparison (AUC Scores)
+
+![Model Comparison](assets/model-comparison.png)
+
+Hybrid and stacked models outperformed several individual baseline models, demonstrating the effectiveness of ensemble learning techniques for credit risk prediction.
 
 ---
 
 ## Repository Structure
-loan-payback-ml/
-│
-├── notebooks/
-│ └── loan-payback-model.ipynb
-│
-├── docs/
-│ └── loan-payback-report.docx
-│
-└── README.md
-
-
----
-
-## Future Improvements
-
-- Hyperparameter tuning
-- Cross-validation
-- Deployment as a risk scoring API
-- Model comparison with additional ensemble techniques
-
----
-
-## Author
-
-Preciosa Muujiza Ngoy Kalumba  
-M.S. Artificial Intelligence & Business Analytics  
-University of South Florida
