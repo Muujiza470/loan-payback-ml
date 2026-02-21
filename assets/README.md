@@ -8,7 +8,6 @@ The tuned XGBoost model achieved an AUC score of approximately 0.92, demonstrati
 ---
 
 ### Model Comparison (AUC Scores)
-
 ![Model Comparison](assets/model-comparison.png)
 
 Multiple baseline and hybrid models were evaluated. Hybrid stacking approaches achieved the highest performance, outperforming individual models.
